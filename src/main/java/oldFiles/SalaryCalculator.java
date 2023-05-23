@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class SalaryCalculator {
 
     public static double multiplierPerDaysSkipped(int daysSkipped) {

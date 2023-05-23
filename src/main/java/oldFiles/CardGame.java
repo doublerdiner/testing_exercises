@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class CardGame {
 
     public static int parseCard(String card){

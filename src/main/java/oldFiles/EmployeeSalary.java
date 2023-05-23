@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class EmployeeSalary {
 
     public static double calculateSalary(int daysOff, int hours, double hourlyPay){

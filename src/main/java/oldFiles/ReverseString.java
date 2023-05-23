@@ -1,3 +1,5 @@
+package oldFiles;
+
 import java.util.List;
 
 public class ReverseString {
@@ -10,6 +12,6 @@ public class ReverseString {
             reversed = letter + reversed;
             System.out.println(letter);
         }
-        System.out.println(reversed.len);
+        System.out.println(reversed);
     }
 }

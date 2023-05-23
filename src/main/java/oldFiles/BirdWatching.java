@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class BirdWatching {
 
     public static int getToday(){

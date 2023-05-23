@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class BillCalculation {
 
     public static double calculateTotalMealPrice(double listedPrice, double tipRate, double taxRate){
