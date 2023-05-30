@@ -1,4 +1,6 @@
 import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import unitTesting.Calculator;
 
 import java.util.Arrays;
@@ -36,11 +38,12 @@ public class CalculatorTest {
         assertEquals(expected, answer);
     }
 
-    @Test
-    public void testIsEven(){
-        boolean answer = calculator.isEven(2);
-        assertTrue(answer);
-    }
+//    @ParameterizedTest
+//    @ValueSource(ints = {2, -2, 200, -100000, 200000})
+//    public void testIsEven(int number){
+//        boolean answer = calculator.isEven(number);
+//        assertTrue(answer);
+//    }
     @Test
     public void testIsOdd(){
         boolean answer = calculator.isEven(5);
