@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class Squares {
     public static int computeSquareOfSum(int num){
         int total = 0;

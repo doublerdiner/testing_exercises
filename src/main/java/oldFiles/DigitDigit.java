@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class DigitDigit {
     public int squareDigits(int n){
         StringBuilder answer = new StringBuilder();

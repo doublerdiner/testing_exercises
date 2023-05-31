@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class SpinWords {
 
     public String spinWords(String sentence){
