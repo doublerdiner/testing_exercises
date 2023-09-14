@@ -1,6 +1,6 @@
 package ExercismChallenges;
 
-public class charTest {
+public class CharTest {
     public static void main(String[] args) {
         String testWord = "t4ryi53nΓg-tβιεγτh\u001Fi_s";
         String regex = "[ά-ώ]";
