@@ -1,6 +1,6 @@
-package CodingTests;
+package CodingTests.One;
 
-public class OneOne {
+public class One {
 
     public static void main(String[] args) {
 
