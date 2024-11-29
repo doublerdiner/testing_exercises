@@ -1,26 +1,25 @@
 package CodingTests.One;
 
-import java.util.Arrays;
-
 public class Four {
 
     public static void main(String[] args) {
         String testString = "Taco CAT";
+        String testString2 = "ooOo    ";
+        String testString3 = "Test";
         System.out.println(checkIfStringIsPalindrome(testString));
+        System.out.println(checkIfStringIsPalindrome(testString2));
+        System.out.println(checkIfStringIsPalindrome(testString3));
     }
 
     private static boolean checkIfStringIsPalindrome(String inputString) {
-        char[] inputArray = inputString.toLowerCase().strip().replaceAll("\\s", "").toCharArray();
-        Arrays.sort(inputArray);
-        int oddCharacters = inputArray.length%2;
-        boolean foundMiddleCharacter = false;
-        for(int i=0; i<inputArray.length-oddCharacters; i++){
-            if((i+1 == inputArray.length && foundMiddleCharacter) || (inputArray[i] != inputArray[i+1] && foundMiddleCharacter)){
+        String cleanString = inputString.toLowerCase().strip().replaceAll("\\s", "");
+        int lastIndex = cleanString.length()-1;
+        for(int i=0, j=lastIndex; i<cleanString.length()/2; i++, j--){
+            char firstLetter = cleanString.charAt(i);
+            char lastLetter = cleanString.charAt(j);
+            if (firstLetter != lastLetter){
                 return false;
-            } else if (inputArray[i] != inputArray[i+1]) {
-                foundMiddleCharacter=true;
             }
-            else i++;
         }
         return true;
     }
