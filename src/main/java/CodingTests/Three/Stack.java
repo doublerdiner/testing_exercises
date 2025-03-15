@@ -6,6 +6,8 @@ import java.util.Objects;
 public class Stack<T> {
     private StackNode<T> top;
 
+    private int size = 0;
+
     private static class StackNode<T> {
         private T data;
         private StackNode<T> next;
@@ -20,6 +22,7 @@ public class Stack<T> {
         StackNode<T> newNode = new StackNode<>(data);
         newNode.next = top;
         top = newNode;
+        size += 1;
     }
 
     public T pop() {
@@ -28,6 +31,7 @@ public class Stack<T> {
         }
         T data = top.data;
         top = top.next;
+        size -= 1;
         return data;
     }
 
@@ -40,6 +44,10 @@ public class Stack<T> {
 
     public boolean isEmpty() {
         return Objects.isNull(top);
+    }
+
+    public int size() {
+        return size;
     }
 }
 

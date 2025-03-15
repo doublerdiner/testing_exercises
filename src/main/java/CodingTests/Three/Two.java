@@ -33,6 +33,7 @@ public class Two extends Stack<Integer> {
 
     Stack<Integer> s2;
     public Two(){
+        super();
         this.s2 = new Stack<>();
     }
 
